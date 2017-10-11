@@ -16,7 +16,8 @@ let NAV_BAR_HEIGHT = 44.0
 
 class DYMainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     // MARK: - 属性
-    var tableview:UITableView = UITableView()
+    let tableview:UITableView = UITableView()
+    
     // MARK: - 生命周期
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class DYMainViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.view.addSubview(tableview)
     }
     
-    //MARK: - 数据源方法
+    // MARK: - 数据源方法
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -41,5 +42,6 @@ class DYMainViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         return cell!
     }
+    
 
 }
