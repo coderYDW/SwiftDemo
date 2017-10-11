@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         print(shape.a)
         
         shape.mesthed1(num: shape.a)
-        
+        // TODO: - 学习到15页
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +36,7 @@ class Shape {
     }
     
     let a = 11
-    private func mesthed1(num:Int) {
+    fileprivate func mesthed1(num:Int) {
         print(num)
     }
 }
