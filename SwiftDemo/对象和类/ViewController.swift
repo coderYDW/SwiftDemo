@@ -13,30 +13,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let shape = Shape.init()
+        let shape = Shape.init(name: "jack", age: 11)
+        shape.numberOfSides = 10
+        print(shape.name!)
+        print(shape.simpleDescription())
+
+        let nameShape = NameShape.init(name1: "Bob", age: 20)
+        nameShape.numberOfSides = 20
+        print(nameShape.simpleDescription())
         
-        print(shape.a)
+        let optionalShape : Shape? = Shape(name:nil, age:29)
         
-        shape.mesthed1(num: shape.a)
-        // TODO: - 学习到15页
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let name = optionalShape?.name
+        
+        print(name ?? "默认值")
+        
     }
 
 
-}
-
-class Shape {
-    var numberOfSides = 0
-    func simpleDescription() -> String {
-        return "A shape with \(numberOfSides) sides."
-    }
-    
-    let a = 11
-    fileprivate func mesthed1(num:Int) {
-        print(num)
-    }
 }
