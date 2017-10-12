@@ -93,20 +93,37 @@ class ViewController: UIViewController {
         
         
         
-        let success = ServerResponse.Result("6:00 am", "8:09 pm")
-        print(success)
-        let failure = ServerResponse.Failure("Out of cheese.")
-        print(failure)
-        switch success {
-        case let .Result(sunrise, sunset):
-            _ = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
-        case let .Failure(message):
-            print("Failure...  \(message)")
-        case let .Other(name):
-            print("other\(name)")
-        case let .OtherTwo(age):
-            print(age)
+//        let success = ServerResponse.Result("6:00 am", "8:09 pm")
+//        print(success)
+//        let failure = ServerResponse.Failure("Out of cheese.")
+//        print(failure)
+//        switch success {
+//        case let .Result(sunrise, sunset):
+//            _ = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
+//        case let .Failure(message):
+//            print("Failure...  \(message)")
+//        case let .Other(name):
+//            print("other\(name)")
+//        case let .OtherTwo(age):
+//            print(age)
+//        }
+        
+        
+        struct Card {
+            
+            var rank: Rank
+            var suit: Suit
+            
+            func simpleDescription() -> String {
+                return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+            }
+            
         }
+        
+        let threeOfSpades = Card(rank: .Three, suit: .Diamonds)
+        let threeOfSpadesDescription = threeOfSpades.simpleDescription()
+        print(threeOfSpadesDescription)
+        
         
     }
 
