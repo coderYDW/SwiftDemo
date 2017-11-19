@@ -52,6 +52,27 @@ enum simpleEnem: ExampleProtocol {
     
 }
 
+extension Int : ExampleProtocol {
+    
+    var simpleDescription: String {
+        return "this is \(self)"
+    }
+    
+    func adjust() {
+        print("adjust number \(simpleDescription)")
+    }
+    
+}
+
+extension Double {
+    func absoluteValue () -> Double {
+//        if self < 0 {
+//            return -self;
+//        }
+//        return self;
+        return fabs(self) //取绝对值
+    }
+}
 
 class ViewController: UIViewController {
 
@@ -69,7 +90,16 @@ class ViewController: UIViewController {
         
         //TODO: - 19页学习延展
         
+        let c:Int = 1
+        c.adjust()
         
+        let d1 = -980.0
+        let d2 = 29.0
+        
+        let d3 = d1.absoluteValue()
+        let d4 = d2.absoluteValue()
+        
+        print(d3,d4)
         
     }
 
