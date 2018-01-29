@@ -8,6 +8,27 @@
 
 import UIKit
 
+
+protocol exampleProtocol {
+    func absoluteValue(a:Double) -> Double
+}
+
+extension Double: exampleProtocol{
+    func absoluteValue(a: Double) -> Double {
+        return 1.0
+    }
+}
+
+extension Int {
+    
+    func ydw_go(aa:Int) -> Int {
+        return aa + 1
+    }
+    
+    
+}
+
+
 protocol ExampleProtocol {
     var simpleDescription: String { get }
     mutating func adjust()
@@ -79,27 +100,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let a = simpleClass()
-        a.adjust()
-        let aDescription = a.simpleDescription
-        print(aDescription)
+//        let a = simpleClass()
+//        a.adjust()
+//        let aDescription = a.simpleDescription
+//        print(aDescription)
+//
+//        var b = simpleStruct()
+//        b.adjust()
+//        print(b.simpleDescription)
+//
+//        let c:Int = 1
+//        c.adjust()
+//
+//        let d1 = -980.0
+//        let d2 = 29.0
+//
+//        let d3 = d1.absoluteValue()
+//        let d4 = d2.absoluteValue()
+//
+//        print(d3,d4)
         
-        var b = simpleStruct()
-        b.adjust()
-        print(b.simpleDescription)
+        let aa:Int = 1
+        let b11 = aa.ydw_go(aa: 1)
+        print(b11)
         
-        //TODO: - 19页学习延展
-        
-        let c:Int = 1
-        c.adjust()
-        
-        let d1 = -980.0
-        let d2 = 29.0
-        
-        let d3 = d1.absoluteValue()
-        let d4 = d2.absoluteValue()
-        
-        print(d3,d4)
         
     }
 
@@ -107,7 +131,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
 
 
 }
+
+
+
 
