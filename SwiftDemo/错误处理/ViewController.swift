@@ -15,6 +15,8 @@ enum PrinterError: Error {
 }
 
 
+var fridgeIsOpen = false
+let fridgeContent = ["milk", "eggs", "leftovers"]
 
 class ViewController: UIViewController {
     
@@ -41,16 +43,21 @@ class ViewController: UIViewController {
 //        }
         
         
-        do {
-            let printResponse = try send(code: 1004, toPrinter: "1")
-            print(printResponse)
-        }
-        catch let printerError as PrinterError {
-            print(printerError)
-        }
-        catch {
+//        do {
+//            let printResponse = try send(code: 1004, toPrinter: "1")
+//            print(printResponse)
+//        }
+//        catch let printerError as PrinterError {
+//            print(printerError)
+//        }
+//        catch {
 //            print(error)
-        }
+//        }
+
+        
+        
+        fridgeContains("banana")
+        print(fridgeIsOpen)
         
     }
     
@@ -60,7 +67,14 @@ class ViewController: UIViewController {
     }
     
     
-    
+    func fridgeContains(_ food: String) -> Bool {
+        fridgeIsOpen = true
+        defer {
+            fridgeIsOpen = false
+        }
+        let result = fridgeContent.contains(food)
+        return result
+    }
     
     func send(job: Int, toPrinter printerName: String) throws -> String {
         if printerName == "Never Has Toner" {
