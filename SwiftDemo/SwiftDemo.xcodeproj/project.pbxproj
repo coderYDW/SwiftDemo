@@ -44,6 +44,11 @@
 		18F5E4BA1F8F745E00C8EDCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5E4B81F8F745E00C8EDCC /* Main.storyboard */; };
 		18F5E4BC1F8F745E00C8EDCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F5E4BB1F8F745E00C8EDCC /* Assets.xcassets */; };
 		18F5E4BF1F8F745E00C8EDCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5E4BD1F8F745E00C8EDCC /* LaunchScreen.storyboard */; };
+		E4DD3C8A201F51D00042435C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD3C89201F51D00042435C /* AppDelegate.swift */; };
+		E4DD3C8C201F51D00042435C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD3C8B201F51D00042435C /* ViewController.swift */; };
+		E4DD3C8F201F51D00042435C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DD3C8D201F51D00042435C /* Main.storyboard */; };
+		E4DD3C91201F51D00042435C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DD3C90201F51D00042435C /* Assets.xcassets */; };
+		E4DD3C94201F51D00042435C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DD3C92201F51D00042435C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +140,13 @@
 		18F5E4BB1F8F745E00C8EDCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F5E4BE1F8F745E00C8EDCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F5E4C01F8F745E00C8EDCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DD3C87201F51D00042435C /* 错误处理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "错误处理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DD3C89201F51D00042435C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4DD3C8B201F51D00042435C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4DD3C8E201F51D00042435C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4DD3C90201F51D00042435C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4DD3C93201F51D00042435C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4DD3C95201F51D00042435C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4DD3C84201F51D00042435C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -224,6 +243,7 @@
 				18F5E4831F8E213600C8EDCC /* 对象和类 */,
 				18F5E49D1F8F1E0800C8EDCC /* 枚举和结构体 */,
 				18F5E4B31F8F745E00C8EDCC /* 协议和扩展 */,
+				E4DD3C88201F51D00042435C /* 错误处理 */,
 				18F5E4031F8DBEC200C8EDCC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -241,6 +261,7 @@
 				18F5E4821F8E213600C8EDCC /* 对象和类.app */,
 				18F5E49C1F8F1E0800C8EDCC /* 枚举和结构体.app */,
 				18F5E4B21F8F745E00C8EDCC /* 协议和扩展.app */,
+				E4DD3C87201F51D00042435C /* 错误处理.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,6 +381,19 @@
 				18F5E4C01F8F745E00C8EDCC /* Info.plist */,
 			);
 			path = "协议和扩展";
+			sourceTree = "<group>";
+		};
+		E4DD3C88201F51D00042435C /* 错误处理 */ = {
+			isa = PBXGroup;
+			children = (
+				E4DD3C89201F51D00042435C /* AppDelegate.swift */,
+				E4DD3C8B201F51D00042435C /* ViewController.swift */,
+				E4DD3C8D201F51D00042435C /* Main.storyboard */,
+				E4DD3C90201F51D00042435C /* Assets.xcassets */,
+				E4DD3C92201F51D00042435C /* LaunchScreen.storyboard */,
+				E4DD3C95201F51D00042435C /* Info.plist */,
+			);
+			path = "错误处理";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,13 +573,30 @@
 			productReference = 18F5E4B21F8F745E00C8EDCC /* 协议和扩展.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E4DD3C86201F51D00042435C /* 错误处理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DD3C98201F51D00042435C /* Build configuration list for PBXNativeTarget "错误处理" */;
+			buildPhases = (
+				E4DD3C83201F51D00042435C /* Sources */,
+				E4DD3C84201F51D00042435C /* Frameworks */,
+				E4DD3C85201F51D00042435C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "错误处理";
+			productName = "错误处理";
+			productReference = E4DD3C87201F51D00042435C /* 错误处理.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		18F5E3FA1F8DBEC200C8EDCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
@@ -593,6 +644,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					E4DD3C86201F51D00042435C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 18F5E3FD1F8DBEC200C8EDCC /* Build configuration list for PBXProject "SwiftDemo" */;
@@ -618,6 +673,7 @@
 				18F5E4811F8E213600C8EDCC /* 对象和类 */,
 				18F5E49B1F8F1E0800C8EDCC /* 枚举和结构体 */,
 				18F5E4B11F8F745E00C8EDCC /* 协议和扩展 */,
+				E4DD3C86201F51D00042435C /* 错误处理 */,
 			);
 		};
 /* End PBXProject section */
@@ -711,6 +767,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4DD3C85201F51D00042435C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DD3C94201F51D00042435C /* LaunchScreen.storyboard in Resources */,
+				E4DD3C91201F51D00042435C /* Assets.xcassets in Resources */,
+				E4DD3C8F201F51D00042435C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -800,6 +866,15 @@
 			files = (
 				18F5E4B71F8F745E00C8EDCC /* ViewController.swift in Sources */,
 				18F5E4B51F8F745E00C8EDCC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DD3C83201F51D00042435C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DD3C8C201F51D00042435C /* ViewController.swift in Sources */,
+				E4DD3C8A201F51D00042435C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +996,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				18F5E4BE1F8F745E00C8EDCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E4DD3C8D201F51D00042435C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4DD3C8E201F51D00042435C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4DD3C92201F51D00042435C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4DD3C93201F51D00042435C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1347,6 +1438,38 @@
 			};
 			name = Release;
 		};
+		E4DD3C96201F51D00042435C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733QRH4LPJ;
+				INFOPLIST_FILE = "错误处理/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dov.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4DD3C97201F51D00042435C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733QRH4LPJ;
+				INFOPLIST_FILE = "错误处理/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dov.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1445,6 +1568,15 @@
 			buildConfigurations = (
 				18F5E4C21F8F745E00C8EDCC /* Debug */,
 				18F5E4C31F8F745E00C8EDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4DD3C98201F51D00042435C /* Build configuration list for PBXNativeTarget "错误处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DD3C96201F51D00042435C /* Debug */,
+				E4DD3C97201F51D00042435C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
